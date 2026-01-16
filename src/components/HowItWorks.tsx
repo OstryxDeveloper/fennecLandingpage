@@ -81,8 +81,8 @@ export default function HowItWorks() {
                 <div className="relative w-full max-w-[1616px] h-full flex items-center justify-center">
 
                     {/* Background Heading: Effortless Group Matching Starts Here */}
-                    <div className="absolute top-[80px] md:top-[120px] w-full text-center pointer-events-none z-0 px-4">
-                        <h2 className="text-[60px] md:text-[clamp(80px,8vw,140px)] font-bold leading-[110%] text-white opacity-10 uppercase tracking-[-0.04em] select-none">
+                    <div className="absolute top-[150px] w-full text-center pointer-events-none z-0">
+                        <h2 className="text-[140px] font-bold leading-[110%] text-white opacity-10 uppercase tracking-[-0.04em] select-none whitespace-nowrap">
                             Effortless Group <br /> Matching Starts Here
                         </h2>
                     </div>

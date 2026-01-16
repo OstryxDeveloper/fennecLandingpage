@@ -37,18 +37,18 @@ export default function Footer() {
             }}
         >
             <div
-                className="relative w-full flex flex-col items-center px-[20px] lg:px-[152px] py-[40px] lg:py-[80px] gap-[40px] lg:gap-[80px] bg-[#5F00DB] rounded-t-[40px] lg:rounded-t-[80px]"
+                className="relative w-full flex flex-col items-center px-[152px] py-[80px] gap-[80px] bg-[#5F00DB] rounded-t-[80px]"
                 style={{
                     boxShadow: '0px 0px 100px #5F00DB'
                 }}
             >
                 {/* Content Wrapper */}
-                <div className="flex flex-col lg:flex-row items-start lg:items-center w-full max-w-[1616px] gap-[40px] lg:gap-[80px]">
+                <div className="flex flex-row items-center w-full max-w-[1616px] gap-[80px]">
 
                     {/* Left Column: Logo + Socials + Copyright */}
-                    <div className="flex flex-col items-start gap-[24px] lg:gap-[40px] w-full lg:max-w-[768px]">
+                    <div className="flex flex-col items-start gap-[40px] w-full max-w-[768px]">
                         {/* Logo */}
-                        <div className="relative w-full lg:w-[768px] h-[100px] lg:h-[164.57px]">
+                        <div className="relative w-[768px] h-[164.57px]">
                             <Image
                                 src="/assets/Footer section/Vector.png"
                                 alt="Fennec Logo"
@@ -58,9 +58,9 @@ export default function Footer() {
                         </div>
 
                         {/* Bottom Row: Socials and Copyright */}
-                        <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between w-full lg:w-[768px] gap-6 lg:gap-0">
+                        <div className="flex flex-row items-end justify-between w-[768px] h-[69.43px]">
                             {/* Socials */}
-                            <div className="flex flex-row items-center gap-[24px]">
+                            <div className="flex flex-row items-end gap-[24px] w-[216px] h-[69.43px]">
                                 {SOCIAL_LINKS.map((social, index) => (
                                     <Link
                                         key={index}
@@ -74,14 +74,14 @@ export default function Footer() {
                             </div>
 
                             {/* Copyright */}
-                            <p className="text-white text-[16px] lg:text-[18px] leading-[32px] font-normal text-left lg:text-right w-full lg:w-auto">
+                            <p className="text-white text-[18px] leading-[32px] font-normal text-right w-[512px] h-[32px] flex items-center justify-end">
                                 © 2025 Fennec. All rights reserved.
                             </p>
                         </div>
                     </div>
 
                     {/* Right Column: Links Blocks */}
-                    <div className="flex flex-row flex-wrap lg:flex-nowrap items-start gap-[40px] w-full lg:max-w-[768px]">
+                    <div className="flex flex-row items-start gap-[40px] w-full max-w-[768px]">
                         {/* Quick Links */}
                         <div className="flex flex-col items-start gap-[16px] flex-1">
                             <h3 className="text-white text-[28px] h-[34px] leading-[120%] font-bold tracking-[-0.04em] flex items-center">
