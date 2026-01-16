@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Michroma } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -12,6 +12,12 @@ export const metadata: Metadata = {
   description: "Experience the future of digital management with Fenec.",
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -19,9 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={cn(inter.className, michroma.variable, "bg-[#1a1a1a] antialiased")}>
+      <body className={cn(inter.className, michroma.variable, "bg-[#1a1a1a] antialiased overflow-x-hidden w-full")}>
         <Header />
-        <main className="min-h-screen">
+        <main className="min-h-screen w-full overflow-x-hidden">
           {children}
         </main>
       </body>

@@ -220,7 +220,7 @@ export default function Features() {
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8 }}
-                        className="text-[140px] md:text-[220px] font-black text-white leading-none tracking-tight group-hover:scale-105 transition-transform duration-700"
+                        className="text-[clamp(80px,20vw,220px)] font-black text-white leading-none tracking-tight group-hover:scale-105 transition-transform duration-700"
                     >
                         94%
                     </motion.h2>
@@ -231,7 +231,7 @@ export default function Features() {
 
                 <div className="flex flex-col gap-8">
                     <div className="bg-[#5F00DB] rounded-[60px] p-16 flex flex-col justify-center items-center text-center flex-1 border border-white/5 shadow-2xl hover:scale-[1.02] transition-transform duration-500">
-                        <h2 className="text-8xl md:text-[140px] font-black text-white leading-none">78%</h2>
+                        <h2 className="text-[clamp(60px,12vw,140px)] font-black text-white leading-none">78%</h2>
                         <p className="text-white/90 text-2xl md:text-3xl font-bold mt-8">
                             of Users Report Better First Interactions in Groups
                         </p>
@@ -356,10 +356,10 @@ function TestimonialsSlider() {
 
                             {/* Testimonial Text */}
                             <h2
-                                className="w-full h-[158px] flex items-center text-white font-normal"
+                                className="w-full h-auto min-h-[158px] flex items-center text-white font-normal"
                                 style={{
                                     fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif",
-                                    fontSize: '72px',
+                                    fontSize: 'clamp(32px, 5vw, 72px)',
                                     lineHeight: '110%',
                                     letterSpacing: '-0.04em'
                                 }}

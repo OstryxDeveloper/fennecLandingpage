@@ -150,7 +150,7 @@ export default function Hero() {
                 {/* Heading */}
                 <div className="flex flex-col items-center gap-[12px] md:gap-[24px] w-full text-center max-w-[360px] md:max-w-none">
                     <h1
-                        className="text-white font-bold text-[60px] md:text-[100px] leading-[110%] tracking-[-0.04em]"
+                        className="text-white font-bold text-[48px] md:text-[clamp(64px,7vw,100px)] leading-[110%] tracking-[-0.04em]"
                         style={{ fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" }}
                     >
                         Meet New People,<br />
