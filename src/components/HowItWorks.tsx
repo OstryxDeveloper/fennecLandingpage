@@ -20,10 +20,10 @@ const CARDS = [
         title: "Create Your Group",
         description: "Bring up to 5 friends. Your group becomes your identity.",
         image: "/assets/How to work Section/StickyWrapper_4.png",
-        left: "0px",
+        left: "0vw",
         rotate: -5,
-        textHeight: "143px",
-        textOffset: "10.86px",
+        textHeight: "9.93vw",
+        textOffset: "0.75vw",
         isStatic: true
     },
     {
@@ -31,33 +31,33 @@ const CARDS = [
         title: "Match With Other Groups",
         description: "Swipe through groups that share your vibe, interests, and intentions.",
         image: "/assets/How to work Section/StickyWrapper_3.png",
-        left: "272px",
+        left: "18.89vw",
         rotate: 5,
-        textHeight: "169px",
-        textOffset: "0px",
-        triggerTop: 402
+        textHeight: "11.74vw",
+        textOffset: "0vw",
+        triggerTop: '21.14vw'
     },
     {
         id: 3,
         title: "Start the Conversation",
         description: "Chat, send photos, poke someone you like, or jump on voice/video calls when you're ready.",
         image: "/assets/How to work Section/StickyWrapper_2.png",
-        left: "544px",
+        left: "37.78vw",
         rotate: -5,
-        textHeight: "165px",
-        textOffset: "8.99px",
-        triggerTop: 804
+        textHeight: "11.46vw",
+        textOffset: "0.624vw",
+        triggerTop: '42.28vw'
     },
     {
         id: 4,
         title: "Meet IRL",
         description: "Take your connections from screen to real life—with the comfort of people you trust.",
         image: "/assets/How to work Section/StickyWrapper_1.png",
-        right: "-1px",
+        right: "-0.07vw",
         rotate: 5,
-        textHeight: "165px",
-        textOffset: "0px",
-        triggerTop: 1206
+        textHeight: "11.46vw",
+        textOffset: "0vw",
+        triggerTop: '63.43vw'
     },
 ];
 
@@ -72,23 +72,23 @@ export default function HowItWorks() {
         <section
             id="how-it-works"
             ref={sectionRef}
-            className="relative w-full bg-[#111111] h-[2079px]" // Total height from CSS
+            className="relative w-full bg-[#111111] h-[144vw]" // Total height proportionally
         >
             {/* Sticky Viewport */}
             <div className="sticky top-0 h-screen w-full flex justify-center items-center overflow-hidden">
 
                 {/* Main 1083px Container */}
-                <div className="relative w-full max-w-[1083px] h-full flex items-center justify-center">
+                <div className="relative w-full max-w-[75.2vw] h-full flex items-center justify-center">
 
                     {/* Background Heading: Effortless Group Matching Starts Here */}
-                    <div className="absolute top-[120px] w-full text-center pointer-events-none z-0">
-                        <h2 className="text-[80px] font-bold leading-[110%] text-white opacity-10 uppercase tracking-[-0.04em] select-none whitespace-nowrap">
+                    <div className="absolute top-[8.3vw] w-full text-center pointer-events-none z-0">
+                        <h2 className="text-[5.5vw] font-bold leading-[110%] text-white opacity-10 uppercase tracking-[-0.04em] select-none whitespace-nowrap">
                             Effortless Group <br /> Matching Starts Here
                         </h2>
                     </div>
 
                     {/* Cards Row Container */}
-                    <div className="relative w-full h-[268px] mt-[320px]">
+                    <div className="relative w-full h-[18.6vw] mt-[22.2vw]">
                         {CARDS.map((card, index) => (
                             <CardItem
                                 key={card.id}
@@ -125,7 +125,7 @@ function CardItem({ card, index, scrollYProgress }: { card: any; index: number; 
     const y = useTransform(
         scrollYProgress,
         [start === 0 ? 0 : start, end === 0 ? 0.01 : end],
-        [initialY, 0]
+        [initialY, "0vw"]
     );
 
     const opacity = useTransform(
@@ -149,14 +149,14 @@ function CardItem({ card, index, scrollYProgress }: { card: any; index: number; 
                 top: 0,
                 y: finalY,
                 opacity: displayOpacity,
-                width: "268px",
-                height: "268px",
+                width: "18.6vw",
+                height: "18.6vw",
             }}
             className="z-10"
         >
             {/* Card Wrapper (268x268) */}
             <motion.div
-                className="relative w-[268px] h-[268px] bg-[#5F00DB] border-[3px] border-[#111111] rounded-[16px] overflow-hidden group shadow-2xl"
+                className="relative w-[18.6vw] h-[18.6vw] bg-[#5F00DB] border-[0.2vw] border-[#111111] rounded-[1.1vw] overflow-hidden group shadow-2xl"
                 style={{
                     rotate: `${card.rotate}deg`,
                 }}
@@ -164,46 +164,46 @@ function CardItem({ card, index, scrollYProgress }: { card: any; index: number; 
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
                 {/* Image Layer */}
-                <div className="absolute inset-x-[-49.39px] top-[-4.32px] bottom-[4.32px] z-0">
+                <div className="absolute inset-x-[-3.4vw] top-[-0.3vw] bottom-[0.3vw] z-0">
                     <Image
                         src={card.image}
                         alt={card.title}
                         fill
                         className="object-cover transition-transform duration-700 group-hover:scale-110"
-                        sizes="268px"
+                        sizes="18.6vw"
                     />
                 </div>
 
                 {/* Logo background asset (based on user hint) */}
                 <div className="absolute top-[27px] right-[27px] w-[33px] h-[33px] z-1 opacity-40 pointer-events-none group-hover:scale-110 transition-transform duration-500">
-                    <Image
+                    {/* <Image
                         src="/assets/Header_Section/Vector_logo.png"
                         alt=""
                         fill
                         className="object-contain"
-                    />
+                    /> */}
                 </div>
 
                 {/* Text Layer (Bottom UI) */}
                 <div
-                    className="absolute bottom-0 left-0 right-0 p-[16px] pb-[21px] z-10 flex flex-col justify-end transition-all duration-500 transform translate-y-3 group-hover:translate-y-0"
+                    className="absolute bottom-0 left-0 right-0 p-[1.1vw] pb-[1.45vw] z-10 flex flex-col justify-end transition-all duration-500 transform translate-y-[0.8vw] group-hover:translate-y-0"
                     style={{
                         height: card.textHeight,
                         background: "linear-gradient(180deg, rgba(22, 0, 63, 0) 0%, rgba(22, 0, 63, 0.75) 100%)",
-                        backdropFilter: "blur(3px)",
-                        WebkitBackdropFilter: "blur(3px)"
+                        backdropFilter: "blur(0.2vw)",
+                        WebkitBackdropFilter: "blur(0.2vw)"
                     }}
                 >
                     <div
-                        className="flex flex-col gap-[11px]"
+                        className="flex flex-col gap-[0.76vw]"
                         style={{
-                            paddingLeft: card.textOffset !== "0px" ? card.textOffset : "0px"
+                            paddingLeft: card.textOffset !== "0vw" ? card.textOffset : "0vw"
                         }}
                     >
-                        <h3 className="text-[21px] font-bold leading-[120%] tracking-[-0.04em] text-white">
+                        <h3 className="text-[1.45vw] font-bold leading-[120%] tracking-[-0.04em] text-white">
                             {card.title}
                         </h3>
-                        <p className="text-[12px] font-normal leading-relaxed text-white/95">
+                        <p className="text-[0.83vw] font-normal leading-relaxed text-white/95">
                             {card.description}
                         </p>
                     </div>

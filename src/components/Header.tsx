@@ -9,9 +9,9 @@ import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 
 const NAV_LINKS = [
-    { label: "How It Works", href: "#how-it-works", width: "96px", mobileWidth: "193px" },
-    { label: "Features", href: "#features", width: "71px", mobileWidth: "142px" },
-    { label: "About", href: "#about", width: "56px", mobileWidth: "111px" },
+    { label: "How It Works", href: "#how-it-works", width: "6.66vw", mobileWidth: "51.4vw" },
+    { label: "Features", href: "#features", width: "4.93vw", mobileWidth: "37.8vw" },
+    { label: "About", href: "#about", width: "3.88vw", mobileWidth: "29.6vw" },
 ];
 
 export default function Header() {
@@ -45,21 +45,21 @@ export default function Header() {
 
     return (
         <>
-            <header className="fixed top-3 md:top-5 left-0 right-0 z-50 flex justify-center px-3 md:px-4">
+            <header className="fixed top-[3.2vw] md:top-[1.38vw] left-0 right-0 z-50 flex justify-center px-[3.2vw] md:px-4">
                 <nav className={cn(
                     "w-full transition-all duration-300 relative flex items-center justify-between",
                     // Desktop Styles
-                    "md:max-w-[1083px] md:h-[59px] md:px-3 md:bg-[#5F00DB]/25 md:backdrop-blur-[8px] md:border md:border-white/10 md:rounded-[43px]",
+                    "md:max-w-[75.2vw] md:h-[4.1vw] md:px-[0.83vw] md:bg-[#5F00DB]/25 md:backdrop-blur-[0.55vw] md:border md:border-white/10 md:rounded-[2.98vw]",
                     // Mobile Styles
-                    "h-[46px] px-[11px] bg-[#5F00DB]/25 backdrop-blur-[8px] rounded-[43px] border border-white/5 max-w-[273px]",
+                    "h-[12.2vw] px-[2.9vw] bg-[#5F00DB]/25 backdrop-blur-[2.1vw] rounded-[11.4vw] border border-white/5 max-w-[72.8vw]",
                     isScrolled && "md:bg-[#5F00DB]/40"
                 )}>
                     {/* Logo - Center on Desktop, Left on Mobile */}
                     <Link
                         href="/"
-                        className="flex items-center gap-[8px] h-[32px] order-1 md:absolute md:left-1/2 md:-translate-x-1/2"
+                        className="flex items-center gap-[2.1vw] md:gap-[0.55vw] h-[8.5vw] md:h-[2.22vw] order-1 md:absolute md:left-1/2 md:-translate-x-1/2"
                     >
-                        <div className="relative w-[32px] h-[32px]">
+                        <div className="relative w-[8.5vw] md:w-[2.22vw] h-[8.5vw] md:h-[2.22vw]">
                             <Image
                                 src="/assets/Header_Section/Vector_logo.png"
                                 alt="Fennec Logo"
@@ -67,7 +67,7 @@ export default function Header() {
                                 className="object-contain"
                             />
                         </div>
-                        <span className="font-michroma text-[16px] leading-[23px] text-white">
+                        <span className="font-michroma text-[4.2vw] md:text-[1.11vw] leading-[140%] text-white">
                             Fennec
                         </span>
                     </Link>
@@ -79,14 +79,14 @@ export default function Header() {
                                 <Link
                                     key={link.label}
                                     href={link.href}
-                                    className="group relative flex flex-col items-center justify-center h-[32px] px-3 transition-colors"
+                                    className="group relative flex flex-col items-center justify-center h-[2.22vw] px-[0.83vw] transition-colors"
                                     style={{ width: link.width }}
                                 >
-                                    <span className="text-[12px] leading-[21px] text-white font-['SF_Pro_Text',sans-serif] flex items-center">
+                                    <span className="text-[0.83vw] leading-[175%] text-white font-['SF_Pro_Text',sans-serif] flex items-center">
                                         {link.label}
                                     </span>
                                     {/* Hover Indicator (Rectangle 3) */}
-                                    <div className="absolute bottom-[5px] left-[22px] right-[22px] h-[1px] bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-[1px]" />
+                                    <div className="absolute bottom-[0.34vw] left-[1.5vw] right-[1.5vw] h-[0.06vw] bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-[0.06vw]" />
                                 </Link>
                             ))}
                         </div>
@@ -97,23 +97,24 @@ export default function Header() {
                         {/* Desktop Button */}
                         <Button
                             className={cn(
-                                "hidden md:flex w-[131px] h-[38px] bg-[#5F00DB] hover:bg-[#4D00B3] text-white rounded-[35px] px-[16px] items-center justify-center gap-[8px] transition-all",
-                                "shadow-[0px_3px_8px_rgba(95,0,219,0.25)]"
+                                "hidden md:flex w-[9.1vw] h-[2.64vw] bg-[#5F00DB] hover:bg-[#4D00B3] text-white rounded-[2.4vw] px-[1.1vw] items-center justify-center gap-[0.55vw] transition-all",
+                                "shadow-[0px_0.2vw_0.55vw_rgba(95,0,219,0.25)]"
+                                // shadow-[0px_3px_8px] -> 3/1440 = 0.2vw
                             )}
                             onClick={scrollToDownload}
                         >
-                            <span className="font-['SF_Pro_Text',sans-serif] font-medium text-[11px] leading-[16px]">
+                            <span className="font-['SF_Pro_Text',sans-serif] font-medium text-[0.76vw] leading-[1.11vw]">
                                 Download App
                             </span>
-                            <Download className="w-[16px] h-[16px]" />
+                            <Download className="w-[1.11vw] h-[1.11vw]" />
                         </Button>
 
                         {/* Mobile Menu Icon Button */}
                         <button
-                            className="md:hidden w-[24px] h-[24px] flex items-center justify-center text-white rounded-full transition-colors"
+                            className="md:hidden w-[6.4vw] h-[6.4vw] flex items-center justify-center text-white rounded-full transition-colors"
                             onClick={() => setIsMobileMenuOpen(true)}
                         >
-                            <Menu className="w-[24px] h-[24px]" />
+                            <Menu className="w-[6.4vw] h-[6.4vw]" />
                         </button>
                     </div>
                 </nav>
@@ -130,10 +131,10 @@ export default function Header() {
                         className="fixed inset-0 z-[60] bg-[#16003F] flex flex-col items-center"
                     >
                         {/* Menu Header Area */}
-                        <div className="w-full flex justify-center px-3 mt-3">
-                            <div className="w-full max-w-[273px] h-[46px] flex items-center justify-between px-[11px] bg-[#5F00DB]/25 backdrop-blur-[8px] rounded-[43px] border border-white/5">
-                                <div className="flex items-center gap-[8px] h-[32px]">
-                                    <div className="relative w-[32px] h-[32px]">
+                        <div className="w-full flex justify-center px-[3.2vw] mt-[3.2vw]">
+                            <div className="w-full max-w-[72.8vw] h-[12.2vw] flex items-center justify-between px-[2.9vw] bg-[#5F00DB]/25 backdrop-blur-[2.1vw] rounded-[11.4vw] border border-white/5">
+                                <div className="flex items-center gap-[2.1vw] h-[8.5vw]">
+                                    <div className="relative w-[8.5vw] h-[8.5vw]">
                                         <Image
                                             src="/assets/Header_Section/Vector_logo.png"
                                             alt="Fennec Logo"
@@ -141,23 +142,23 @@ export default function Header() {
                                             className="object-contain"
                                         />
                                     </div>
-                                    <span className="font-michroma text-[16px] leading-[23px] text-white">
+                                    <span className="font-michroma text-[4.2vw] leading-[140%] text-white">
                                         Fennec
                                     </span>
                                 </div>
                                 <button
-                                    className="w-[24px] h-[24px] flex items-center justify-center text-white"
+                                    className="w-[6.4vw] h-[6.4vw] flex items-center justify-center text-white"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
-                                    <X className="w-[24px] h-[24px]" />
+                                    <X className="w-[6.4vw] h-[6.4vw]" />
                                 </button>
                             </div>
                         </div>
 
                         {/* Menu Content */}
-                        <div className="flex-1 flex flex-col items-center justify-center gap-[54px] w-full">
+                        <div className="flex-1 flex flex-col items-center justify-center gap-[14.4vw] w-full">
                             {/* Nav Links */}
-                            <nav className="flex flex-col items-center gap-[16px] w-full">
+                            <nav className="flex flex-col items-center gap-[4.2vw] w-full">
                                 {NAV_LINKS.map((link) => (
                                     <motion.div
                                         key={link.label}
@@ -168,15 +169,15 @@ export default function Header() {
                                     >
                                         <Link
                                             href={link.href}
-                                            className="group relative flex flex-col items-center justify-center h-[64px] transition-all hover:scale-105"
+                                            className="group relative flex flex-col items-center justify-center h-[17vw] transition-all hover:scale-105"
                                             style={{ width: link.mobileWidth }}
                                             onClick={() => setIsMobileMenuOpen(false)}
                                         >
-                                            <span className="text-[24px] leading-[43px] text-white font-['SF_Pro_Text',sans-serif] whitespace-nowrap">
+                                            <span className="text-[6.4vw] leading-[11.4vw] text-white font-['SF_Pro_Text',sans-serif] whitespace-nowrap">
                                                 {link.label}
                                             </span>
                                             {/* Rectangle 3 line 94+ */}
-                                            <div className="absolute bottom-[11px] left-[15%] right-[15%] h-[3px] bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-active:opacity-100 transition-opacity rounded-[3px]" />
+                                            <div className="absolute bottom-[2.9vw] left-[15%] right-[15%] h-[0.8vw] bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-active:opacity-100 transition-opacity rounded-[0.8vw]" />
                                         </Link>
                                     </motion.div>
                                 ))}
@@ -184,21 +185,21 @@ export default function Header() {
 
                             {/* Download Button */}
                             <motion.div
-                                initial={{ opacity: 0, y: 13 }}
+                                initial={{ opacity: 0, y: '3.4vw' }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.3 }}
                             >
                                 <Button
                                     className={cn(
-                                        "w-[131px] h-[38px] bg-[#5F00DB] hover:bg-[#4D00B3] text-white rounded-[35px] px-[16px] flex items-center justify-center gap-[8px] transition-all",
-                                        "shadow-[0px_3px_8px_rgba(95,0,219,0.25)]"
+                                        "w-[35vw] h-[10.1vw] bg-[#5F00DB] hover:bg-[#4D00B3] text-white rounded-[9.3vw] px-[4.2vw] flex items-center justify-center gap-[2.1vw] transition-all",
+                                        "shadow-[0px_0.8vw_2.1vw_rgba(95,0,219,0.25)]"
                                     )}
                                     onClick={scrollToDownload}
                                 >
-                                    <span className="font-['SF_Pro_Text',sans-serif] font-medium text-[11px] leading-[16px]">
+                                    <span className="font-['SF_Pro_Text',sans-serif] font-medium text-[2.9vw] leading-[4.2vw]">
                                         Download App
                                     </span>
-                                    <Download className="w-[16px] h-[16px]" />
+                                    <Download className="w-[4.2vw] h-[4.2vw]" />
                                 </Button>
                             </motion.div>
                         </div>
