@@ -26,8 +26,8 @@ const ICONS = {
         mobile: "/assets/hero/Mobile/Image_tick.png",
     },
     human: {
-        desktop: "/assets/hero/Mobile/Image_people.png",
-        mobile: "/assets/hero/Mobile/Image_people.png",
+        desktop: "/assets/hero/Mobile/Image_peoplee.png",
+        mobile: "/assets/hero/Mobile/Image_peoplee.png",
     },
 };
 
@@ -116,7 +116,7 @@ export default function Hero() {
             <div
                 className="absolute inset-x-[-2.08%] inset-y-[-3.7%] z-0"
                 style={{
-                    background: `linear-gradient(180deg, rgba(17, 17, 17, 0.5) 0%, #111111 70%), url('/assets/hero/BG.png')`,
+                    background: `linear-gradient(180deg, rgba(17, 17, 17, 0.5) 0%, #111111 70%), url('/assets/Hero_Background.PNG')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center'
                 }}

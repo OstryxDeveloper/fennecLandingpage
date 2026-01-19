@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { Check, ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const FEATURES = [
     {
@@ -65,7 +65,9 @@ export default function Features() {
                 <div
                     className="absolute inset-0 bg-[#16003F]"
                     style={{
-                        background: 'linear-gradient(135deg, #16003F 0%, #080018 100%)'
+                        background: 'linear-gradient(135deg, rgba(22, 0, 63, 0.9) 0%, rgba(8, 0, 24, 0.9) 100%), url("/assets/Hero_Background.PNG")',
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center'
                     }}
                 >
                     {/* Subtle grid or noise could go here */}
@@ -152,9 +154,16 @@ export default function Features() {
                             >
                                 {activeFeature.points.map((point, index) => (
                                     <div key={index} className="flex items-center gap-[0.76vw] h-[3.33vw]">
-                                        <div className="w-[2.22vw] h-[2.22vw] flex items-center justify-center rounded-full bg-[#3ADC60]/10 border border-[#3ADC60]/20">
-                                            <Check className="w-[1.1vw] h-[1.1vw] text-[#3ADC60]" />
+
+                                        <div className="relative w-[1.33vw] h-[1.33vw]">
+                                            <Image
+                                                src="/check-circle.svg"
+                                                alt=""
+                                                fill
+                                                className="object-contain"
+                                            />
                                         </div>
+
                                         <p className="text-white text-[1.11vw] font-normal leading-[150%] flex-1">
                                             {point}
                                         </p>
@@ -215,7 +224,15 @@ export default function Features() {
             {/* Subsection 3: Statistics Grid */}
             <div className="mt-[5.5vw] grid grid-cols-1 lg:grid-cols-2 gap-[1.4vw] max-w-[72vw] mx-auto w-full">
                 <div className="bg-[#2D1B69] rounded-[2.7vw] p-[3.75vw] flex flex-col justify-center items-center text-center min-h-[32.5vw] border border-white/5 relative overflow-hidden group">
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[27.9vw] h-[27.9vw] bg-purple-500/10 blur-[5.5vw] rounded-full" />
+                    <div
+                        className="absolute inset-0 z-0 opacity-40 group-hover:opacity-50 transition-opacity duration-700"
+                        style={{
+                            backgroundImage: 'url("/assets/Hero_Background.PNG")',
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center'
+                        }}
+                    />
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[27.9vw] h-[27.9vw] bg-purple-500/10 blur-[5.5vw] rounded-full z-1" />
                     <motion.h2
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
