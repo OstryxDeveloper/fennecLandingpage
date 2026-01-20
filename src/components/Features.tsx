@@ -58,12 +58,12 @@ export default function Features() {
     const activeFeature = FEATURES.find(f => f.id === activeId) || FEATURES[0];
 
     return (
-        <section id="features" className="w-full bg-[#11011e] py-[5.5vw] flex flex-col items-center">
+        <section id="features" className="w-full bg-[#111111] py-[5.5vw] flex flex-col items-center">
             {/* Main Features Container - 1083px wide */}
             <div className="w-full max-w-[75.2vw] h-[37.2vw] relative rounded-[1.8vw] overflow-hidden">
                 {/* Background Gradient & Pattern */}
                 <div
-                    className="absolute inset-0 bg-[#16003F]"
+                    className="absolute inset-0 bg-[#111111]"
                     style={{
                         background: 'linear-gradient(135deg, rgba(22, 0, 63, 0.9) 0%, rgba(8, 0, 24, 0.9) 100%), url("/assets/Hero_Background.PNG")',
                         backgroundSize: 'cover',
@@ -89,7 +89,7 @@ export default function Features() {
                                         "w-[20.8vw] text-left transition-all duration-500 rounded-[1.1vw] p-[1.1vw] flex flex-col justify-start gap-[1.1vw] overflow-hidden",
                                         isActive
                                             ? "bg-[#5F00DB] h-[12.8vw]"
-                                            : "h-[5.7vw] bg-white/5 hover:bg-white/10"
+                                            : "h-[5.7vw] bg-transparent hover:bg-[#030226]"
                                     )}
                                 >
                                     <h3 className={cn(
@@ -202,7 +202,7 @@ export default function Features() {
                             className="object-cover transition-transform duration-1000 group-hover:scale-105"
                         />
                         {/* Overlay with Content */}
-                        <div className="absolute inset-0 bg-[#16003F]/50 p-[5.3vw] md:p-[3.75vw] flex flex-col md:flex-row items-center md:items-end justify-between gap-[1.87vw] md:gap-[1.87vw]">
+                        <div className="absolute inset-0 bg-black/50 p-[5.3vw] md:p-[3.75vw] flex flex-col md:flex-row items-center md:items-end justify-between gap-[1.87vw] md:gap-[1.87vw]">
                             <h3 className="text-white text-[6.4vw] md:text-[3.33vw] font-normal leading-[110%] tracking-[-0.04em] flex-1 text-center md:text-left">
                                 Fennec makes expanding your circle natural, effortless, and fun—together.
                             </h3>
@@ -223,9 +223,9 @@ export default function Features() {
 
             {/* Subsection 3: Statistics Grid */}
             <div className="mt-[5.5vw] grid grid-cols-1 lg:grid-cols-2 gap-[1.4vw] max-w-[72vw] mx-auto w-full">
-                <div className="bg-[#2D1B69] rounded-[2.7vw] p-[3.75vw] flex flex-col justify-center items-center text-center min-h-[32.5vw] border border-white/5 relative overflow-hidden group">
+                <div className="bg-[#16003F] rounded-[2.7vw] p-[3.75vw] flex flex-col justify-center items-center text-center min-h-[32.5vw] border border-white/5 relative overflow-hidden group">
                     <div
-                        className="absolute inset-0 z-0 opacity-40 group-hover:opacity-50 transition-opacity duration-700"
+                        className="absolute inset-0 z-0 opacity-40 transition-opacity duration-700"
                         style={{
                             backgroundImage: 'url("/assets/Hero_Background.PNG")',
                             backgroundSize: 'cover',
@@ -237,7 +237,7 @@ export default function Features() {
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8 }}
-                        className="text-[25vw] md:text-[10.2vw] font-black text-white leading-none tracking-tight group-hover:scale-105 transition-transform duration-700"
+                        className="text-[25vw] md:text-[10.2vw] font-black text-white leading-none tracking-tight transition-transform duration-700"
                     >
                         94%
                     </motion.h2>
@@ -247,7 +247,7 @@ export default function Features() {
                 </div>
 
                 <div className="flex flex-col gap-[1.4vw]">
-                    <div className="bg-[#5F00DB] rounded-[2.7vw] p-[3vw] flex flex-col justify-center items-center text-center flex-1 border border-white/5 shadow-2xl hover:scale-[1.02] transition-transform duration-500">
+                    <div className="bg-[#5F00DB] rounded-[2.7vw] p-[3vw] flex flex-col justify-center items-center text-center flex-1 border border-white/5 shadow-2xl transition-transform duration-500">
                         <h2 className="text-[16vw] md:text-[6.5vw] font-black text-white leading-none">78%</h2>
                         <p className="text-white/90 text-[5.3vw] md:text-[1.66vw] font-bold mt-[1.4vw]">
                             of Users Report Better First Interactions in Groups
@@ -255,13 +255,13 @@ export default function Features() {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-[1.4vw]">
-                        <div className="bg-[#1a0035] rounded-[2.7vw] p-[2.2vw] flex flex-col justify-center items-center text-center border border-white/5 shadow-xl hover:scale-[1.02] transition-transform duration-500">
+                        <div className="bg-[#5F00DB]/75 rounded-[2.7vw] p-[2.2vw] flex flex-col justify-center items-center text-center border border-white/5 shadow-xl transition-transform duration-500">
                             <h2 className="text-[10.6vw] md:text-[4.16vw] font-black text-white">1.2M+</h2>
                             <p className="text-white/70 text-[3.7vw] md:text-[0.97vw] font-bold mt-[1.1vw] uppercase tracking-wider">
                                 Conversations Started
                             </p>
                         </div>
-                        <div className="bg-[#1a0035] rounded-[2.7vw] p-[2.2vw] flex flex-col justify-center items-center text-center border border-white/5 shadow-xl hover:scale-[1.02] transition-transform duration-500">
+                        <div className="bg-[#5F00DB]/50 rounded-[2.7vw] p-[2.2vw] flex flex-col justify-center items-center text-center border border-white/5 shadow-xl transition-transform duration-500">
                             <h2 className="text-[10.6vw] md:text-[4.16vw] font-black text-white">350K+</h2>
                             <p className="text-white/70 text-[3.7vw] md:text-[0.97vw] font-bold mt-[1.1vw] uppercase tracking-wider">
                                 Groups Connected

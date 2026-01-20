@@ -51,7 +51,7 @@ export default function Header() {
                     // Desktop Styles
                     "md:max-w-[75.2vw] md:h-[4.1vw] md:px-[0.83vw] md:bg-[#5F00DB]/25 md:backdrop-blur-[0.55vw] md:border md:border-white/10 md:rounded-[2.98vw]",
                     // Mobile Styles
-                    "h-[12.2vw] px-[2.9vw] bg-[#5F00DB]/25 backdrop-blur-[2.1vw] rounded-[11.4vw] border border-white/5 max-w-[72.8vw]",
+                    "h-[12.2vw] px-[2.9vw] bg-[#5F00DB]/25 backdrop-blur-[2.1vw] rounded-[11.4vw] border border-white/5 max-w-[93.6vw]",
                     isScrolled && "md:bg-[#5F00DB]/40"
                 )}>
                     {/* Logo - Center on Desktop, Left on Mobile */}
@@ -132,7 +132,7 @@ export default function Header() {
                     >
                         {/* Menu Header Area */}
                         <div className="w-full flex justify-center px-[3.2vw] mt-[3.2vw]">
-                            <div className="w-full max-w-[72.8vw] h-[12.2vw] flex items-center justify-between px-[2.9vw] bg-[#5F00DB]/25 backdrop-blur-[2.1vw] rounded-[11.4vw] border border-white/5">
+                            <div className="w-full max-w-[93.6vw] h-[12.2vw] flex items-center justify-between px-[2.9vw] bg-[#5F00DB]/25 backdrop-blur-[2.1vw] rounded-[11.4vw] border border-white/5">
                                 <div className="flex items-center gap-[2.1vw] h-[8.5vw]">
                                     <div className="relative w-[8.5vw] h-[8.5vw]">
                                         <Image
