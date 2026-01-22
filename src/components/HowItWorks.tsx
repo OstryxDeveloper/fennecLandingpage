@@ -149,7 +149,7 @@ export default function HowItWorks() {
                     </div>
 
                     {/* Cards Render Area */}
-                    <div className={`relative w-full flex items-center justify-center ${isMobile ? 'h-[400px] mt-[15vh]' : 'h-[20.83vw] mt-[8.12vw]'}`}>
+                    <div className={`relative w-full flex items-center justify-center ${isMobile ? 'h-[400px] mt-[15vh]' : 'h-[24.83vw] mt-[28.12vw]'}`}>
                         {cards.map((card, index) => (
                             <StickyCard
                                 key={card.id}
@@ -171,6 +171,7 @@ function StickyCard({ card, index, scrollYProgress, isMobile }: { card: any; ind
     // Only animate non-static cards. 
     // Start at y: "100vh" (bottom of screen) and transform to y: "0%" (final position).
 
+    const [isHovered, setIsHovered] = useState(false);
     const range = card.scrollRange || [0, 0];
 
     // Y-Axis Fly-in using percentages for responsive accuracy
@@ -207,39 +208,60 @@ function StickyCard({ card, index, scrollYProgress, isMobile }: { card: any; ind
             className="flex items-center justify-center"
         >
             <motion.div
-                className={`relative bg-[#5F00DB] border-[#111111] overflow-hidden group shadow-2xl transition-all duration-300 ${isMobile
-                    ? 'w-[376px] h-[376px] border-[5px] rounded-[16px]'
-                    : 'w-[20.83vw] h-[20.83vw] border-[0.26vw] rounded-[1.25vw]'
+                className={`relative bg-[#5F00DB] border-[#111111] overflow-hidden group shadow-2xl ${isMobile
+                    ? 'w-[376px] h-[376px] border-[5px]'
+                    : 'w-[20.83vw] h-[20.83vw] border-[0.26vw]'
                     }`}
                 style={{
                     rotate: `${card.rotate}deg`,
+                    borderRadius: isMobile ? '16px' : '1.25vw',
                 }}
+                onHoverStart={() => setIsHovered(true)}
+                onHoverEnd={() => setIsHovered(false)}
                 // Removed scale on hover for the card container to keep text static
                 transition={{ type: "spring", stiffness: 300, damping: 25 }}
             >
                 {/* Image Background */}
-                <div className={`absolute z-0 ${isMobile
-                    ? 'inset-x-[-73.9px] top-[-3.87px] bottom-[3.87px]'
-                    : 'inset-x-[-3.4vw] top-[-0.3vw] bottom-[0.3vw] lg:rounded-[1.25vw]'
-                    }`}>
+                <div 
+                    className={`absolute z-0 overflow-hidden ${isMobile
+                        ? 'inset-x-[-73.9px] top-[-3.87px] bottom-[3.87px]'
+                        : 'inset-x-[-3.4vw] top-[-0.3vw] bottom-[0.3vw]'
+                        }`}
+                    style={{
+                        borderRadius: isMobile ? '16px' : '1.25vw',
+                        willChange: 'transform'
+                    }}
+                >
                     <Image
                         src={card.image}
                         alt={card.title}
                         fill
-                        className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:opacity-60
-                                    overflow-hidden rounded-[16px] lg:rounded-[1.25vw]"
+                        className="object-cover transition-transform transition-opacity duration-700 group-hover:scale-110 group-hover:opacity-60"
+                        style={{
+                            borderRadius: isMobile ? '16px' : '1.25vw'
+                        }}
                         sizes={isMobile ? "376px" : "20.83vw"}
                     />
                 </div>
 
                 {/* Light Purple Shade Hover Overlay */}
-                <div className="absolute inset-0 bg-[#5F00DB]/40 opacity-0 group-hover:opacity-10 transition-opacity duration-500 z-[5] pointer-events-none" />
+                <motion.div 
+                    className="absolute inset-0 bg-[#5F00DB]/40 pointer-events-none z-[5] overflow-hidden"
+                    style={{
+                        borderRadius: isMobile ? '16px' : '1.25vw'
+                    }}
+                    animate={{ opacity: isHovered ? 0.1 : 0 }}
+                    transition={{ 
+                        duration: 0.4,
+                        ease: [0.4, 0, 0.2, 1]
+                    }}
+                />
 
                 <div
-                    className={`absolute bottom-0 left-0 right-0 z-10 flex flex-col justify-end ${isMobile ? 'p-4 pb-6' : 'p-[1.25vw] pb-[1.25vw] pt-[3.33vw]'}`}
+                    className={`absolute bottom-0 left-0 right-0     flex flex-col justify-end ${isMobile ? 'p-4 pb-6' : 'p-[1.25vw] pb-[1.25vw] pt-[3.33vw]'}`}
                     style={{
                         height: isMobile ? `calc(${card.textHeight} / 2)` : `calc(${card.textHeight} / 2)`, // Reduced height by 50%
-                        background: "linear-gradient(180deg, rgba(22, 0, 63, 0) 0%, rgba(22, 0, 63, 0.55) 100%)",
+                        background: "linear-gradient(180deg, rgba(22, 0, 63, 0) 0%, rgba(22, 0, 61, 0.75) 90%)",
                         backdropFilter: isMobile ? "blur(2px)" : "blur(0.1625vw)", // Adjusted blur height proportionally
                         WebkitBackdropFilter: isMobile ? "blur(2px)" : "blur(0.1625vw)"
                     }}
