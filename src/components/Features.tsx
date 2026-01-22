@@ -4,10 +4,6 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import StatisticsGrid from "./StatisticsGrid";
-import ProblemStatement from "./ProblemStatement";
-import TestimonialsSlider from "./TestimonialsSlider";
 
 const FEATURES = [
     {
