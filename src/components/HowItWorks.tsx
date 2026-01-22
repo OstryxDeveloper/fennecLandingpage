@@ -132,14 +132,14 @@ export default function HowItWorks() {
             className="relative w-full bg-[#111111] h-[500vh]" // Sticky stacking needs vertical room
         >
             {/* Sticky Viewport Layer */}
-            <div className="sticky top-0 h-screen w-full flex justify-center items-center overflow-hidden lg:px-[7.91vw]">
+            <div className="sticky top-20 h-screen w-full flex justify-center items-center overflow-hidden lg:px-[7.91vw]">
 
                 {/* Visual Bounds Container */}
                 <div className={`relative w-full h-full flex items-center justify-center ${isMobile ? 'max-w-[408px]' : 'max-w-[84.16vw] lg:w-full'}`}>
 
                     {/* Fixed Background Heading */}
                     <div className={`absolute w-full text-center pointer-events-none z-0 ${isMobile ? 'top-[12vh]' : 'top-[7.81vw]'}`}>
-                        <h2 className={`${isMobile ? 'text-[60px]' : 'text-[7.29vw]'} font-bold leading-[110%] text-white opacity-10 uppercase tracking-[-0.04em] select-none whitespace-nowrap`}>
+                        <h2 className={`${isMobile ? 'text-[60px]' : 'text-[7.29vw]'} font-bold leading-[110%] text-white opacity-10 tracking-[-0.04em] select-none whitespace-nowrap`}>
                             {isMobile ? (
                                 <>Effortless Group <br /> Matching</>
                             ) : (
@@ -149,7 +149,7 @@ export default function HowItWorks() {
                     </div>
 
                     {/* Cards Render Area */}
-                    <div className={`relative w-full flex items-center justify-center ${isMobile ? 'h-[400px] mt-[15vh]' : 'h-[20.83vw] mt-[28.12vw]'}`}>
+                    <div className={`relative w-full flex items-center justify-center ${isMobile ? 'h-[400px] mt-[15vh]' : 'h-[20.83vw] mt-[8.12vw]'}`}>
                         {cards.map((card, index) => (
                             <StickyCard
                                 key={card.id}
