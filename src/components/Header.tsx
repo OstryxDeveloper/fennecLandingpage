@@ -131,8 +131,8 @@ export default function Header() {
                         className="fixed inset-0 z-[60] bg-[#16003F] flex flex-col items-center"
                     >
                         {/* Menu Header Area */}
-                        <div className="w-full flex justify-center px-[3.2vw] mt-[3.2vw]">
-                            <div className="w-full max-w-[93.6vw] h-[12.2vw] flex items-center justify-between px-[2.9vw] bg-[#5F00DB]/25 backdrop-blur-[2.1vw] rounded-[11.4vw] border border-white/5">
+                        <div className="w-full flex justify-center  mt-[3.2vw]">
+                            <div className="w-full max-w-[93.6vw] h-[12.2vw] flex items-center justify-between  bg-[#5F00DB]/25 backdrop-blur-[2.1vw] rounded-[11.4vw] border border-white/5">
                                 <div className="flex items-center gap-[2.1vw] h-[8.5vw]">
                                     <div className="relative w-[8.5vw] h-[8.5vw]">
                                         <Image
