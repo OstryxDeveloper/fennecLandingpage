@@ -51,7 +51,7 @@ export function GooglePlayButton({ className }: StoreButtonProps) {
                     Get it on
                 </span>
                 <span
-                    className="text-white text-[18px] mobile:text-[0.97vw] font-semibold whitespace-nowrap"
+                    className="text-white text-[16px] mobile:text-[1.04vw] font-semibold tracking-[-0.04em] mobile:tracking-[-0.05vw] whitespace-nowrap"
                     style={{ fontFamily: "'Product Sans', Roboto, Helvetica, Arial, sans-serif" }}
                 >
                     Google Play

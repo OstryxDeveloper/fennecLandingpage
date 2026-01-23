@@ -85,13 +85,13 @@ export default function TestimonialsSlider() {
     };
 
     return (
-        <section className="w-full bg-[#111111] h-auto mobile:h-[36vw] flex flex-col items-center justify-center relative overflow-hidden bg-transparent py-[40px] mobile:py-[5.5vw] px-[7.0vw]">
+        <section className="w-full bg-[#111111] h-auto mobile:h-[36vw] flex flex-col items-center justify-center relative overflow-hidden bg-transparent py-[9.09vw] mobile:py-[5.5vw] px-[3.63vw] mobile:px-[7.0vw]">
             {/* Outer Container - 1083px for desktop, 408px for mobile */}
-            <div className="w-full bg-[#111111] max-w-[408px] mobile:max-w-[75.2vw] h-[300px] mobile:h-[24.8vw] flex flex-col items-center gap-[40px] mobile:gap-[1.87vw] relative isolation-isolate">
+            <div className="w-full bg-[#111111] max-w-full mobile:max-w-[75.2vw] h-[68.18vw] mobile:h-[24.8vw] flex flex-col items-center gap-[9.09vw] mobile:gap-[1.87vw] relative isolation-isolate">
 
                 {/* Huge Quotation Mark Decor */}
                 <div
-                    className="absolute right-0 lg:top-[-55px] mobile:top-[0.9vw] mobile:right-[-0.9vw] mobile:top-[-0.9vw] w-[75px] h-[54px] mobile:w-[8.75vw] mobile:h-[6.3vw] flex items-center justify-center select-none pointer-events-none z-0"
+                    className="absolute right-0 lg:top-[-55px] mobile:top-[0.9vw] mobile:right-[-0.9vw] mobile:top-[-0.9vw] w-[17.04vw] h-[12.27vw] mobile:w-[8.75vw] mobile:h-[6.3vw] flex items-center justify-center select-none pointer-events-none z-0"
                     style={{ opacity: 0.8 }}
                 >
                     <Image
@@ -104,7 +104,7 @@ export default function TestimonialsSlider() {
                 </div>
 
                 {/* Slides Container */}
-                <div className="w-full h-[268px] mobile:h-[17.4vw] flex flex-col items-start relative z-10">
+                <div className="w-full h-[60.9vw] mobile:h-[17.4vw] flex flex-col items-start relative z-10">
                     <AnimatePresence initial={false} custom={direction} mode="popLayout">
                         <motion.div
                             key={index}
@@ -118,14 +118,14 @@ export default function TestimonialsSlider() {
                                 ease: [0.32, 0.72, 0, 1],
                                 opacity: { duration: 0.4 }
                             }}
-                            className="absolute w-full h-full flex flex-col items-start gap-[24px] mobile:gap-[1.87vw]"
+                            className="absolute w-full h-full flex flex-col items-start gap-[5.45vw] mobile:gap-[1.87vw]"
                         >
                             {/* Avatars Row */}
-                            <div className="flex flex-row items-start gap-[8px] mobile:gap-[0.76vw] w-fit h-[48px] mobile:h-[4.4vw]">
+                            <div className="flex flex-row items-start gap-[1.81vw] mobile:gap-[0.76vw] w-fit h-[10.9vw] mobile:h-[4.4vw]">
                                 {TESTIMONIALS[index].avatars.map((src, i) => (
                                     <div
                                         key={i}
-                                        className="w-[48px] h-[48px] mobile:w-[4.4vw] mobile:h-[4.4vw] rounded-full overflow-hidden flex-shrink-0 bg-[#5F00DB]"
+                                        className="w-[10.9vw] h-[10.9vw] mobile:w-[4.4vw] mobile:h-[4.4vw] rounded-full overflow-hidden flex-shrink-0 bg-[#5F00DB]"
                                     >
                                         <Image
                                             src={src}
@@ -140,7 +140,7 @@ export default function TestimonialsSlider() {
 
                             {/* Testimonial Text */}
                             <h2
-                                className="w-full h-[152px] mobile:h-[7.36vw] flex items-center text-white font-normal"
+                                className="w-full h-[34.54vw] mobile:h-[7.36vw] flex items-center text-white font-normal"
                                 style={{
                                     fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif",
                                     fontSize: 'clamp(24px, 32px, 32px)', // Fixed 32px for mobile, fallback to 24 if too small but specs say 32
@@ -148,13 +148,13 @@ export default function TestimonialsSlider() {
                                     letterSpacing: '-0.04em'
                                 }}
                             >
-                                <span className="block mobile:hidden text-[32px]">{TESTIMONIALS[index].text}</span>
+                                <span className="block mobile:hidden text-[7.27vw]">{TESTIMONIALS[index].text}</span>
                                 <span className="hidden mobile:block text-[3.33vw] leading-[110%]">{TESTIMONIALS[index].text}</span>
                             </h2>
 
                             {/* Author Name */}
                             <p
-                                className="w-full h-[20px] mobile:h-[1.87vw] flex items-center text-white font-normal"
+                                className="w-full h-[4.54vw] mobile:h-[1.87vw] flex items-center text-white font-normal"
                                 style={{
                                     fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif",
                                     fontSize: 'clamp(16px, 18px, 18px)',
@@ -162,7 +162,7 @@ export default function TestimonialsSlider() {
                                     letterSpacing: '-0.04em'
                                 }}
                             >
-                                <span className="block mobile:hidden text-[18px]">{TESTIMONIALS[index].author}</span>
+                                <span className="block mobile:hidden text-[4.09vw]">{TESTIMONIALS[index].author}</span>
                                 <span className="hidden mobile:block text-[1.66vw]">{TESTIMONIALS[index].author}</span>
                             </p>
                         </motion.div>
@@ -171,19 +171,19 @@ export default function TestimonialsSlider() {
 
                 {/* Navigator / Controls */}
                 <div
-                    className="absolute right-0 bottom-0 flex flex-row items-center justify-end px-[16px] mobile:px-0 gap-[24px] mobile:gap-[1.1vw] w-full mobile:w-[5.5vw] h-[48px] mobile:h-[2.2vw]"
+                    className="absolute right-0 bottom-0 flex flex-row items-center justify-end px-[3.63vw] mobile:px-0 gap-[5.45vw] mobile:gap-[1.1vw] w-full mobile:w-[5.5vw] h-[10.9vw] mobile:h-[2.2vw]"
                 >
                     <button
                         onClick={prev}
-                        className="w-[48px] h-[48px] mobile:w-[2.2vw] mobile:h-[2.2vw] flex items-center justify-center bg-[#5F00DB] rounded-full mobile:rounded-[2.4vw] transition-all duration-300 hover:scale-110 active:scale-95 group shadow-[0px_0px_4px_rgba(95,0,219,0.25),0px_4px_12px_rgba(95,0,219,0.25)] mobile:shadow-[0px_0px_0.2vw_rgba(95,0,219,0.25),0px_0.2vw_0.5vw_rgba(95,0,219,0.25)]"
+                        className="w-[10.9vw] h-[10.9vw] mobile:w-[2.2vw] mobile:h-[2.2vw] flex items-center justify-center bg-[#5F00DB] rounded-full mobile:rounded-[2.4vw] transition-all duration-300 hover:scale-110 active:scale-95 group shadow-[0px_0px_4px_rgba(95,0,219,0.25),0px_4px_12px_rgba(95,0,219,0.25)] mobile:shadow-[0px_0px_0.2vw_rgba(95,0,219,0.25),0px_0.2vw_0.5vw_rgba(95,0,219,0.25)]"
                     >
-                        <ChevronLeft className="w-[24px] h-[24px] mobile:w-[1.1vw] mobile:h-[1.1vw] text-white" />
+                        <ChevronLeft className="w-[5.45vw] h-[5.45vw] mobile:w-[1.1vw] mobile:h-[1.1vw] text-white" />
                     </button>
                     <button
                         onClick={next}
-                        className="w-[48px] h-[48px] mobile:w-[2.2vw] mobile:h-[2.2vw] flex items-center justify-center bg-[#5F00DB] rounded-full mobile:rounded-[2.4vw] transition-all duration-300 hover:scale-110 active:scale-95 group shadow-[0px_0px_4px_rgba(95,0,219,0.25),0px_4px_12px_rgba(95,0,219,0.25)] mobile:shadow-[0px_0px_0.2vw_rgba(95,0,219,0.25),0px_0.2vw_0.5vw_rgba(95,0,219,0.25)]"
+                        className="w-[10.9vw] h-[10.9vw] mobile:w-[2.2vw] mobile:h-[2.2vw] flex items-center justify-center bg-[#5F00DB] rounded-full mobile:rounded-[2.4vw] transition-all duration-300 hover:scale-110 active:scale-95 group shadow-[0px_0px_4px_rgba(95,0,219,0.25),0px_4px_12px_rgba(95,0,219,0.25)] mobile:shadow-[0px_0px_0.2vw_rgba(95,0,219,0.25),0px_0.2vw_0.5vw_rgba(95,0,219,0.25)]"
                     >
-                        <ChevronRight className="w-[24px] h-[24px] mobile:w-[1.1vw] mobile:h-[1.1vw] text-white" />
+                        <ChevronRight className="w-[5.45vw] h-[5.45vw] mobile:w-[1.1vw] mobile:h-[1.1vw] text-white" />
                     </button>
                 </div>
             </div>

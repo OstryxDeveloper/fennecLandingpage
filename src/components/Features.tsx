@@ -57,9 +57,9 @@ export default function Features() {
     const activeFeature = FEATURES.find(f => f.id === activeId) || FEATURES[0];
 
     return (
-        <section id="features" className="w-full bg-[#111111] py-[40px] mobile:py-[5.5vw] flex flex-col items-center lg:px-[7.0vw]">
-            {/* Desktop Features Container - 1083px wide (Hidden on Mobile) */}
-            <div className="hidden lg:flex w-full max-w-[75.2vw] lg:max-w-none lg:w-full h-[37.2vw] relative rounded-[1.8vw] overflow-hidden">
+        <section id="features" className="w-full bg-[#111111] py-[40px] mobile:py-[5.5vw] flex flex-col items-center lg:py-[6.25vw] lg:px-[7.91vw]">
+            {/* Desktop Features Container - 1616px wide / 1920px (Hidden on Mobile) */}
+            <div className="hidden lg:flex w-full max-w-[84.16vw] h-[41.66vw] relative rounded-[2.08vw] overflow-hidden">
                 {/* Background Gradient & Pattern */}
                 <div
                     className="absolute inset-0 bg-[#111111]"
@@ -73,10 +73,10 @@ export default function Features() {
                 </div>
 
                 {/* Content Layout: 3 Columns */}
-                <div className="relative z-10 w-full h-full flex items-center px-[2vw] mobile:px-[1.87vw]">
+                <div className="relative z-10 w-full h-full flex items-center justify-between">
 
                     {/* 1. Left Column: Stacked Cards */}
-                    <div className="w-[24.5vw] flex flex-col gap-[1.1vw] items-start">
+                    <div className="w-[27.5vw] h-full flex flex-col justify-center px-[2.08vw] gap-[1.25vw]">
                         {FEATURES.map((feature) => {
                             const isActive = activeId === feature.id;
                             return (
@@ -84,14 +84,14 @@ export default function Features() {
                                     key={feature.id}
                                     onClick={() => setActiveId(feature.id)}
                                     className={cn(
-                                        "w-[20.8vw] text-left transition-all duration-500 rounded-[1.1vw] p-[1.1vw] flex flex-col justify-start gap-[1.1vw] overflow-hidden",
+                                        "w-full text-left transition-all duration-500 rounded-[1.25vw] p-[1.25vw] flex flex-col justify-start gap-[1.25vw] overflow-hidden",
                                         isActive
-                                            ? "bg-[#5F00DB] h-[12.8vw]"
-                                            : "h-[5.7vw] bg-transparent hover:bg-[#030226]"
+                                            ? "bg-[#5F00DB] h-[14.375vw]"
+                                            : "h-[6.45vw] bg-transparent hover:bg-[#030226]"
                                     )}
                                 >
                                     <h3 className={cn(
-                                        "text-[1.45vw] font-bold leading-[120%] tracking-[-0.04em] transition-colors duration-300",
+                                        "text-[1.66vw] font-bold leading-[120%] tracking-[-0.04em] transition-colors duration-300",
                                         "text-white"
                                     )}>
                                         {feature.title}
@@ -104,7 +104,7 @@ export default function Features() {
                                                 animate={{ height: "auto", opacity: 1 }}
                                                 exit={{ height: 0, opacity: 0 }}
                                                 transition={{ duration: 0.4, ease: "easeInOut" }}
-                                                className="text-white text-[0.83vw] leading-[1.45vw] font-normal"
+                                                className="text-white text-[0.9375vw] leading-[1.66vw] font-normal"
                                             >
                                                 {feature.description}
                                             </motion.p>
@@ -116,8 +116,8 @@ export default function Features() {
                     </div>
 
                     {/* 2. Middle Column: Phone Mockup */}
-                    <div className="flex-1 flex justify-center items-center h-full">
-                        <div className="relative w-[24.5vw] h-[33.4vw]">
+                    <div className="w-[27.5vw] flex justify-center items-center h-full">
+                        <div className="relative w-full h-[37.5vw]">
                             <AnimatePresence mode="wait">
                                 <motion.div
                                     key={activeId}
@@ -140,7 +140,7 @@ export default function Features() {
                     </div>
 
                     {/* 3. Right Column: Points */}
-                    <div className="w-[24.5vw] flex flex-col gap-[1.1vw] pl-[2.7vw]">
+                    <div className="w-[27.5vw] h-full flex flex-col justify-center px-[3.125vw]">
                         <AnimatePresence mode="wait">
                             <motion.div
                                 key={activeId}
@@ -148,11 +148,11 @@ export default function Features() {
                                 animate={{ opacity: 1, x: 0 }}
                                 exit={{ opacity: 0, x: '-1.4vw' }}
                                 transition={{ duration: 0.5 }}
-                                className="flex flex-col gap-[1.66vw]"
+                                className="flex flex-col gap-[1.25vw]"
                             >
                                 {activeFeature.points.map((point, index) => (
-                                    <div key={index} className="flex items-center gap-[0.76vw] h-[3.33vw]">
-                                        <div className="relative w-[1.33vw] h-[1.33vw]">
+                                    <div key={index} className="flex items-center gap-[0.83vw] h-[3.75vw]">
+                                        <div className="relative w-[1.25vw] h-[1.25vw]">
                                             <Image
                                                 src="/check-circle.svg"
                                                 alt=""
@@ -160,7 +160,7 @@ export default function Features() {
                                                 className="object-contain"
                                             />
                                         </div>
-                                        <p className="text-white text-[1.11vw] font-normal leading-[150%] flex-1">
+                                        <p className="text-white text-[1.25vw] font-normal leading-[150%] flex-1">
                                             {point}
                                         </p>
                                     </div>
@@ -173,11 +173,11 @@ export default function Features() {
             </div>
 
             {/* Mobile Features Container (Visible on Mobile) */}
-            <div className="flex lg:hidden flex-col w-full px-[20px] gap-6">
+            <div className="flex lg:hidden flex-col w-full px-[3.63vw] gap-[2.72vw]">
                 {FEATURES.map((feature) => {
                     const isActive = activeId === feature.id;
                     return (
-                        <div key={feature.id} className="flex flex-col gap-4">
+                        <div key={feature.id} className="flex flex-col gap-[2.72vw]">
                             {/* Dynamic Part: Image (Only shown for active feature) */}
                             <AnimatePresence>
                                 {isActive && (
@@ -189,7 +189,7 @@ export default function Features() {
                                         className="overflow-hidden"
                                     >
                                         <div
-                                            className="relative w-full aspect-square rounded-[32px] overflow-hidden"
+                                            className="relative w-full h-[105.45vw] rounded-[5.45vw] overflow-hidden"
                                             style={{
                                                 background: 'linear-gradient(135deg, rgba(22, 0, 63, 0.9) 0%, rgba(8, 0, 24, 0.9) 100%), url("/assets/Hero_Background.PNG")',
                                                 backgroundSize: 'cover',
@@ -200,7 +200,7 @@ export default function Features() {
                                                 src={feature.image}
                                                 alt={feature.title}
                                                 fill
-                                                className="object-contain p-8"
+                                                className="object-contain p-[3.63vw]"
                                             />
                                         </div>
                                     </motion.div>
@@ -211,11 +211,13 @@ export default function Features() {
                             <button
                                 onClick={() => setActiveId(feature.id)}
                                 className={cn(
-                                    "w-full text-left transition-all duration-500 rounded-[24px] p-6 flex flex-col gap-4",
-                                    isActive ? "bg-[#5F00DB]" : "bg-[#0a001a] border border-white/5"
+                                    "w-full text-left transition-all duration-500 rounded-[3.63vw] p-[3.63vw] flex flex-col gap-[3.63vw]",
+                                    isActive
+                                        ? "bg-[#5F00DB]"
+                                        : "bg-[#16003F] h-[12.72vw] overflow-hidden justify-center"
                                 )}
                             >
-                                <h3 className="text-[24px] font-bold leading-tight text-white">
+                                <h3 className="text-[4.54vw] font-bold leading-[120%] text-white tracking-[-0.04em]">
                                     {feature.title}
                                 </h3>
 
@@ -223,7 +225,7 @@ export default function Features() {
                                     <motion.p
                                         initial={{ opacity: 0, height: 0 }}
                                         animate={{ opacity: 1, height: "auto" }}
-                                        className="text-white/90 text-[16px] leading-relaxed"
+                                        className="text-white/90 text-[3.18vw] leading-[150%]"
                                     >
                                         {feature.description}
                                     </motion.p>
@@ -237,11 +239,11 @@ export default function Features() {
                                         initial={{ opacity: 0, height: 0 }}
                                         animate={{ opacity: 1, height: "auto" }}
                                         exit={{ opacity: 0, height: 0 }}
-                                        className="flex flex-col gap-4 pl-2"
+                                        className="flex flex-col gap-[1.81vw] px-[3.63vw] pb-[3.63vw]"
                                     >
                                         {feature.points.map((point, idx) => (
-                                            <div key={idx} className="flex items-center gap-3">
-                                                <div className="relative w-5 h-5 flex-shrink-0">
+                                            <div key={idx} className="flex items-center gap-[1.81vw]">
+                                                <div className="relative w-[3.63vw] h-[3.63vw] flex-shrink-0">
                                                     <Image
                                                         src="/check-circle.svg"
                                                         alt=""
@@ -249,7 +251,7 @@ export default function Features() {
                                                         className="object-contain"
                                                     />
                                                 </div>
-                                                <p className="text-white text-[16px]">{point}</p>
+                                                <p className="text-white text-[3.18vw] leading-[150%]">{point}</p>
                                             </div>
                                         ))}
                                     </motion.div>
@@ -261,7 +263,7 @@ export default function Features() {
             </div>
 
 
-           
+
         </section>
     );
 }

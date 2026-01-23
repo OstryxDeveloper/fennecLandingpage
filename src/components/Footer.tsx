@@ -36,7 +36,7 @@ export default function Footer() {
             }}
         >
             <div
-                className="relative w-full max-w-[440px] mobile:max-w-none flex flex-col items-center px-[16px] mobile:px-[7.08vw] py-[40px] mobile:py-[3.75vw] gap-[40px] mobile:gap-[3.75vw] bg-[#5F00DB] rounded-t-[40px] mobile:rounded-t-[3.75vw]"
+                className="relative w-full max-w-[768px] mobile:max-w-none flex flex-col items-center px-[16px] mobile:px-[7.08vw] py-[40px] mobile:py-[3.75vw] gap-[40px] mobile:gap-[3.75vw] bg-[#5F00DB] rounded-t-[40px] mobile:rounded-t-[3.75vw]"
                 style={{
                     boxShadow: '0px 0px 100px #5F00DB'
                 }}
@@ -192,17 +192,17 @@ export default function Footer() {
     );
 }
 
-function TikTokIcon() {
+function TikTokIcon({ size = 16 }: { size?: number }) {
     return (
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
             <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.06-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-1.01-.01 2.92.01 5.84-.02 8.75-.02 1.4-.35 2.81-1.1 4.02-1.39 2.27-4.14 3.44-6.73 2.96-2.58-.45-4.73-2.61-5.18-5.18-.48-2.6.68-5.33 2.95-6.72.63-.39 1.34-.66 2.07-.8.01 1.39.01 2.78.01 4.17-.18.06-.36.14-.52.24-.75.46-1.21 1.28-1.22 2.16.02 1.4.99 2.65 2.37 2.91 1.38.26 2.88-.61 3.25-1.95.1-.38.12-.77.12-1.16-.01-5.69-.01-11.39.01-17.08z" />
         </svg>
     );
 }
 
-function XIcon() {
+function XIcon({ size = 16 }: { size?: number }) {
     return (
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
             <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.932zm-1.294 19.497h2.039L6.486 3.24H4.298l13.31 17.41z" />
         </svg>
     );

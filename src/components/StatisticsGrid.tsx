@@ -37,7 +37,7 @@ export default function StatisticsGrid() {
           >
             {/* Background image */}
             <Image
-              src="/assets/Hero_Background.PNG"
+              src="/assets/Feature Subsection-1/Card BG.png"
               alt=""
               fill
               className="object-cover opacity-40"
