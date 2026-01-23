@@ -54,10 +54,10 @@ export default function Footer() {
                     </div>
 
                     {/* Links Row */}
-                    <div className="flex flex-row items-start justify-center w-[408px] gap-[40px]">
+                    <div className="flex flex-row items-center justify-center w-full max-w-[408px] gap-[16px]">
                         {/* Quick Links */}
-                        <div className="flex flex-col items-start gap-[16px] w-[184px]">
-                            <h4 className="text-white text-[24px] font-bold tracking-[-0.04em] leading-[120%] flex items-center">
+                        <div className="flex flex-col items-center gap-[16px] flex-1 min-w-0 justify-center">
+                            <h4 className="text-white text-[24px] font-bold tracking-[-0.04em] leading-[120%] mr-4">
                                 Quick Links
                             </h4>
                             <div className="flex flex-col items-start gap-[16px]">
@@ -65,7 +65,7 @@ export default function Footer() {
                                     <Link
                                         key={link.label}
                                         href={link.href}
-                                        className="text-white text-[16px] leading-[150%] font-normal hover:opacity-80 transition-opacity whitespace-nowrap"
+                                        className="text-white text-[16px] leading-[150%] font-normal hover:opacity-80 transition-opacity whitespace-nowrap "
                                     >
                                         {link.label}
                                     </Link>
@@ -74,8 +74,8 @@ export default function Footer() {
                         </div>
 
                         {/* Community */}
-                        <div className="flex flex-col items-start gap-[16px] w-[184px]">
-                            <h4 className="text-white text-[24px] font-bold tracking-[-0.04em] leading-[120%] flex items-center">
+                        <div className="flex flex-col items-center gap-[16px] flex-1 min-w-0">
+                            <h4 className="text-white text-[24px] font-bold tracking-[-0.04em] leading-[120%] flex">
                                 Community
                             </h4>
                             <div className="flex flex-col items-start gap-[16px]">
@@ -83,7 +83,7 @@ export default function Footer() {
                                     <Link
                                         key={link.label}
                                         href={link.href}
-                                        className="text-white text-[16px] leading-[150%] font-normal hover:opacity-80 transition-opacity whitespace-nowrap"
+                                        className="text-white text-[16px] leading-[150%] font-normal hover:opacity-80 transition-opacity whitespace-nowrap "
                                     >
                                         {link.label}
                                     </Link>
@@ -93,7 +93,7 @@ export default function Footer() {
                     </div>
 
                     {/* Socials & Copyright */}
-                    <div className="flex flex-col items-center gap-[40px] w-[408px]">
+                    <div className="flex flex-col items-center gap-[40px] w-full max-w-[408px]">
                         <div className="flex flex-row items-center justify-center gap-[24px]">
                             {SOCIAL_LINKS.map((social, index) => (
                                 <Link

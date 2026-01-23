@@ -26,9 +26,8 @@ export default function StatisticsGrid() {
         >
           {/* LEFT CARD — 94% */}
           <div
-            className="relative overflow-hidden flex flex-col justify-center items-center text-center border border-white/5"
+            className="relative overflow-hidden flex flex-col justify-center items-center text-center border border-white/5 w-full mobile:w-[41.6667vw]"
             style={{
-              width: "41.6667vw",
               height: "41.6667vw",
               padding: "2.0833vw",
               borderRadius: "2.0833vw", // 40px
@@ -81,9 +80,8 @@ export default function StatisticsGrid() {
 
           {/* RIGHT COLUMN */}
           <div
-            className="flex flex-col  "
+            className="flex flex-col w-full mobile:w-[41.6667vw]"
             style={{
-              width: "41.6667vw",
               gap: "0.8333vw",
             }}
           >
