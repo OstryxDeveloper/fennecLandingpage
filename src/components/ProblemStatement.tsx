@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ProblemStatement() {
     return (
-        <div className="w-full bg-[#111111] flex flex-col items-center py-[9.09vw] mobile:py-[5.5vw] px-[3.63vw] mobile:px-[7.0vw]">
+        <div className="w-full bg-[#111111] flex flex-col items-center py-[9.09vw] mobile:py-[5.5vw] px-[3.83vw] mobile:px-[7.0vw]">
             <div className="w-full max-w-full mobile:max-w-[90.24vw] flex flex-col items-start gap-[9.09vw] mobile:gap-[1.87vw]">
 
                 {/* Heading Section */}

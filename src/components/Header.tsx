@@ -9,9 +9,9 @@ import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 
 const NAV_LINKS = [
-    { label: "How It Works", href: "#how-it-works", width: "7.5vw", mobileWidth: "51.4vw" },
-    { label: "Features", href: "#features", width: "5.52vw", mobileWidth: "37.8vw" },
-    { label: "About", href: "#about", width: "4.32vw", mobileWidth: "29.6vw" },
+    { label: "How It Works", href: "#how-it-works", mobileWidth: "51.4vw" },
+    { label: "Features", href: "#features", mobileWidth: "37.8vw" },
+    { label: "About", href: "#about", mobileWidth: "29.6vw" },
 ];
 
 export default function Header() {
@@ -80,7 +80,7 @@ export default function Header() {
                                     key={link.label}
                                     href={link.href}
                                     className="group relative flex flex-col items-center justify-center h-[2.22vw] px-[0.83vw] transition-colors"
-                                    style={{ width: link.width }}
+
                                 >
                                     <span className="text-[0.94vw] leading-[1.66vw] text-white font-['SF_Pro_Text',sans-serif] flex items-center font-normal">
                                         {link.label}

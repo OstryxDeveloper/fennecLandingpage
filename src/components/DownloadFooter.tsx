@@ -64,7 +64,7 @@ export function Download() {
                             className="text-white font-normal text-[18px] mobile:text-[1.32vw] lg:text-[1.46vw] leading-[32px] mobile:leading-[120%] lg:leading-[1.77vw] tracking-[-0.04em] text-center w-[328px] h-[96px] mobile:w-auto mobile:h-auto mobile:max-w-[58.6vw] lg:max-w-[65.6vw]"
                             style={{ fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif" }}
                         >
-                            Jump into a world of groups that get you. Swipe, match, and meet your next favorite people.
+                            Jump into a world of groups that get <br className="mobile:hidden" /> you. Swipe, match, and meet your <br className="mobile:hidden" /> next favorite people.
                         </p>
 
                         <div className="flex flex-row justify-center items-start gap-[16px] mobile:gap-[1.1vw] lg:gap-[1.25vw] w-full mobile:w-auto">
@@ -84,7 +84,7 @@ export function Download() {
                 {/* Scan / QR Section */}
                 <div
                     className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center justify-center p-[24px] gap-[40px] z-30 w-full top-[1100px]
-                               mobile:bottom-0 mobile:top-auto mobile:w-[37.2vw] mobile:h-[22.2vw] mobile:gap-[1.87vw] mobile:p-0
+                               mobile:bottom-0 mobile:top-auto mobile:w-full mobile:h-auto mobile:gap-[1.87vw] mobile:p-[5vw]
                                lg:w-[25vw] lg:h-auto lg:top-[63.78vw] lg:bottom-auto lg:p-0 lg:gap-[3.33vw]"
                 >
                     <h3
@@ -95,8 +95,8 @@ export function Download() {
                     </h3>
 
                     <div className="relative w-[208px] h-[208px] bg-[#5F00DB] border-[4px] border-white rounded-[24px] shadow-[0_0_50px_#5F00DB] flex items-center justify-center p-[24px] gap-[10px]
-                                   mobile:w-[11.5vw] mobile:h-[11.5vw] mobile:bg-transparent mobile:border-0 mobile:shadow-none mobile:rounded-0 mobile:p-0 mobile:gap-0
-                                   lg:w-[12.9vw] lg:h-[12.9vw] lg:bg-[#5F00DB] lg:border-[0.2vw] lg:rounded-[1.25vw] lg:shadow-[0_0_2.6vw_#5F00DB] lg:p-[1.25vw] lg:gap-[0.3vw]">
+                                   mobile:w-[47.27vw] mobile:h-[47.27vw] mobile:bg-[#5F00DB] mobile:border-[0.91vw] mobile:border-white mobile:shadow-[0_0_11.36vw_#5F00DB] mobile:rounded-[5.45vw] mobile:p-[5.45vw] mobile:gap-[2.27vw]
+                                   lg:w-[12.92vw] lg:h-[12.92vw] lg:bg-[#5F00DB] lg:border-[0.21vw] lg:rounded-[1.25vw] lg:shadow-[0_0_2.6vw_#5F00DB] lg:p-[1.25vw] lg:gap-[0.52vw]">
                         <div className="relative w-[160px] h-[160px] mobile:w-full mobile:h-full lg:w-full lg:h-full">
                             <Image
                                 src="/assets/download_Section/QRR.png"

@@ -6,39 +6,58 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const TESTIMONIALS = [
     {
         id: 1,
-        text: "Group matching helped us find people with the same vibe. It feels way more natural.",
-        author: "— Erica & Friends",
-        avatars: ["/assets/Testimonials/Avatar.png", "/assets/Testimonials/Avatar.png", "/assets/Testimonials/Avatar.png", "/assets/Testimonials/Avatar.png"]
+        text: "Met a group that shares our love for hiking. Two weekends later, we’re planning a road trip together.",
+        author: "— Samantha & Friends",
+        avatars: [
+            "/assets/Testimonials/Avatars/met_a_group_1.png",
+            "/assets/Testimonials/Avatars/met_a_group_2.png",
+            "/assets/Testimonials/Avatars/met_a_group_3.png",
+            "/assets/Testimonials/Avatars/met_a_group_4.png"
+        ]
     },
     {
         id: 2,
-        text: "Finally, an app that understands social life happens in groups, not just one-on-one.",
-        author: "— The Weekend Squad",
-        avatars: ["/assets/Testimonials/Avatar.png", "/assets/Testimonials/Avatar.png", "/assets/Testimonials/Avatar.png", "/assets/Testimonials/Avatar.png"]
+        text: "Made new friends, expanded our circle, and now weekends actually feel exciting again.",
+        author: "— Ben & Friends",
+        avatars: [
+            "/assets/Testimonials/Avatars/made_new_friends_1.png",
+            "/assets/Testimonials/Avatars/made_new_friends_2.png",
+            "/assets/Testimonials/Avatars/made_new_friends_3.png",
+            "/assets/Testimonials/Avatars/made_new_friends_4.png"
+        ]
     },
     {
         id: 3,
-        text: "We met our best adventure buddies here. The group dynamics are just spot on!",
-        author: "— Adventure Seekers",
-        avatars: ["/assets/Testimonials/Avatar.png", "/assets/Testimonials/Avatar.png", "/assets/Testimonials/Avatar.png", "/assets/Testimonials/Avatar.png"]
+        text: "Group matching helped us find people with the same vibe. It feels way more natural.",
+        author: "— Erica & Friends",
+        avatars: [
+            "/assets/Testimonials/Avatars/group_matching_1.png",
+            "/assets/Testimonials/Avatars/group_matching_2.png",
+            "/assets/Testimonials/Avatars/group_matching_3.png",
+            "/assets/Testimonials/Avatars/group_matching_4.png"
+        ]
     },
     {
         id: 4,
-        text: "No more awkward first dates. Meeting another group is so much more relaxed.",
-        author: "— Local Crew",
-        avatars: ["/assets/Testimonials/Avatar.png", "/assets/Testimonials/Avatar.png", "/assets/Testimonials/Avatar.png", "/assets/Testimonials/Avatar.png"]
+        text: "We met another group within 24 hours, ended up planning a picnic together. Zero awkwardness.",
+        author: "— Jamie & Friends",
+        avatars: [
+            "/assets/Testimonials/Avatars/met_another_1.png",
+            "/assets/Testimonials/Avatars/met_another_2.png",
+            "/assets/Testimonials/Avatars/met_another_3.png",
+            "/assets/Testimonials/Avatars/met_another_4.png"
+        ]
     },
     {
         id: 5,
-        text: "This transformed how we travel. We connect with locals and other travelers instantly.",
-        author: "— Globetrotters",
-        avatars: ["/assets/Testimonials/Avatar.png", "/assets/Testimonials/Avatar.png", "/assets/Testimonials/Avatar.png", "/assets/Testimonials/Avatar.png"]
-    },
-    {
-        id: 6,
-        text: "The easiest way to find people who actually want to do the same stuff as you.",
-        author: "— Hobbies & Vibes",
-        avatars: ["/assets/Testimonials/Avatar.png", "/assets/Testimonials/Avatar.png", "/assets/Testimonials/Avatar.png", "/assets/Testimonials/Avatar.png"]
+        text: "We moved to a new city and had no idea how to meet people. This app solved that in one afternoon.",
+        author: "— Jacob & Friends",
+        avatars: [
+            "/assets/Testimonials/Avatars/moved_new_city_1.png",
+            "/assets/Testimonials/Avatars/moved_new_city_2.png",
+            "/assets/Testimonials/Avatars/moved_new_city_3.png",
+            "/assets/Testimonials/Avatars/moved_new_city_4.png"
+        ]
     }
 ];
 
