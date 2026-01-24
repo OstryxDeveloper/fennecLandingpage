@@ -26,7 +26,7 @@ export default function About() {
                 {/* Content */}
                 <div className="flex flex-col items-start p-0 gap-[5.45vw] mobile:gap-[1.87vw] lg:gap-[2.08vw] w-full mobile:w-[35.7vw] lg:w-[40vw] mobile:h-auto lg:h-auto flex-none order-1">
                     <h2
-                        className="w-full text-white text-[4.54vw] lg:text-[1.67vw] font-bold flex items-center tracking-[-0.04em] leading-[120%]"
+                        className="w-full text-white text-[4.54vw] lg:text-[1.67vw] font-bold flex items-center tracking-[-0.01em] leading-[120%]"
                         style={{
                             fontFamily: "'SF Pro Text', sans-serif",
                         }}
@@ -35,7 +35,7 @@ export default function About() {
                         <span className="hidden mobile:block mobile:text-[1.45vw]">About Us</span>
                     </h2>
                     <h1
-                        className="w-full text-white text-[6.36vw] lg:text-[3.33vw] font-bold flex items-center tracking-[-0.04em] leading-[110%]"
+                        className="w-full text-white text-[6.36vw] lg:text-[3.33vw] font-bold flex items-center tracking-[-0.01em] leading-[110%]"
                         style={{
                             fontFamily: "'SF Pro Text', sans-serif",
                         }}
@@ -45,25 +45,25 @@ export default function About() {
                     </h1>
                     <div className="flex flex-col gap-[5.45vw] mobile:gap-[0.9vw] lg:gap-[2.08vw]">
                         <p
-                            className="w-full text-[#CCCCCC] text-[4.09vw] lg:text-[1.25vw] font-normal flex items-center tracking-[-0.04em] mobile:leading-[177%] lg:leading-[120%]"
+                            className="w-full text-[#CCCCCC] text-[4.09vw] lg:text-[1.25vw] font-normal flex items-center tracking-[-0.01em] mobile:leading-[177%] lg:leading-[120%]"
                             style={{
                                 fontFamily: "'SF Pro Text', sans-serif",
                             }}
                         >
-                            <span className="block mobile:hidden">Most social apps focus on individuals. But in the real world, friendships, adventures, and unforgettable memories often start with a group.</span>
-                            <span className="hidden mobile:block mobile:text-[1.11vw] mobile:leading-[120%] mobile:tracking-[-0.04em]">Most social apps focus on individuals. But in the real world, friendships, adventures, and unforgettable memories often start with a group.</span>
+                            <span className="block tracking-[-0.01em] mobile:hidden">Most social apps focus on individuals. But in the real world, friendships, adventures, and unforgettable memories often start with a group.</span>
+                            <span className="hidden tracking-[0.01em] mobile:block mobile:text-[1.11vw] mobile:leading-[120%] mobile:tracking-[-0.04em]">Most social apps focus on individuals. But in the real world, friendships, adventures, and unforgettable memories often start with a group.</span>
                         </p>
                         <p
-                            className="w-full text-[#CCCCCC] text-[4.09vw] lg:text-[1.25vw] font-normal flex items-center tracking-[-0.04em] mobile:leading-[177%] lg:leading-[120%]"
+                            className="w-full text-[#CCCCCC] text-[4.09vw] lg:text-[1.25vw] font-normal flex items-center tracking-[-0.01em] mobile:leading-[177%] lg:leading-[120%]"
                             style={{
                                 fontFamily: "'SF Pro Text', sans-serif",
                             }}
                         >
-                            <span className="block mobile:hidden">Fennec makes it effortless for groups to find their people, match with the right vibes, and create experiences that actually feel real.</span>
-                            <span className="hidden mobile:block mobile:text-[1.11vw] mobile:leading-[120%] mobile:tracking-[-0.04em]">Fennec makes it effortless for groups to find their people, match with the right vibes, and create experiences that actually feel real.</span>
+                            <span className="block tracking-[0.01em] mobile:hidden">Fennec makes it effortless for groups to find their people, match with the right vibes, and create experiences that actually feel real.</span>
+                            <span className="hidden tracking-[0.01em] mobile:block mobile:text-[1.11vw] mobile:leading-[120%] mobile:tracking-[-0.04em]">Fennec makes it effortless for groups to find their people, match with the right vibes, and create experiences that actually feel real.</span>
                         </p>
                         <p
-                            className="w-full text-[#CCCCCC] text-[4.09vw] lg:text-[1.25vw] font-normal flex items-center tracking-[-0.04em] mobile:leading-[177%] lg:leading-[120%]"
+                            className="w-full text-[#CCCCCC] text-[4.09vw] lg:text-[1.25vw] font-normal flex items-center tracking-[-0.01em] mobile:leading-[177%] lg:leading-[120%]"
                             style={{
                                 fontFamily: "'SF Pro Text', sans-serif",
                             }}
@@ -90,7 +90,7 @@ export default function About() {
                 {/* Content Box - Order 1 on Mobile */}
                 <div className="flex flex-col items-start p-[5.45vw] mobile:p-[1.87vw] lg:p-[2.08vw] gap-[5.45vw] mobile:gap-[1.87vw] lg:gap-[2.08vw] w-full mobile:w-[35.7vw] lg:w-[40vw] mobile:h-auto lg:h-auto bg-[#5F00DB] rounded-[3.63vw] mobile:rounded-[1.87vw] lg:rounded-[2.08vw] flex-none order-1 mobile:order-0">
                     <h2
-                        className="w-full text-white text-[4.54vw] lg:text-[1.67vw] font-bold flex items-center tracking-[-0.04em] leading-[120%]"
+                        className="w-full text-white text-[4.54vw] lg:text-[1.67vw] font-bold flex items-center tracking-[-0.01em] leading-[120%]"
                         style={{
                             fontFamily: "'SF Pro Text', sans-serif",
                         }}
@@ -99,7 +99,7 @@ export default function About() {
                         <span className="hidden mobile:block mobile:text-[1.45vw]">Our Mission</span>
                     </h2>
                     <h3
-                        className="w-full text-white text-[6.36vw] lg:text-[2.5vw] font-bold flex items-center tracking-[-0.04em] leading-[110%]"
+                        className="w-full text-white text-[6.36vw] lg:text-[2.5vw] font-bold flex items-center tracking-[-0.01em] leading-[110%]"
                         style={{
                             fontFamily: "'SF Pro Text', sans-serif",
                         }}
@@ -109,22 +109,22 @@ export default function About() {
                     </h3>
                     <div className="flex flex-col gap-[5.45vw] mobile:gap-[0.9vw] lg:gap-[2.08vw]">
                         <p
-                            className="w-full text-[#CCCCCC] text-[4.09vw] lg:text-[1.25vw] font-normal flex items-center tracking-[-0.04em] mobile:leading-[177%] lg:leading-[120%]"
+                            className="w-full text-[#CCCCCC] text-[4.09vw] lg:text-[1.25vw] font-normal flex items-center tracking-[-0.01em] mobile:leading-[177%] lg:leading-[120%]"
                             style={{
                                 fontFamily: "'SF Pro Text', sans-serif",
                             }}
                         >
                             <span className="block mobile:hidden">We believe friendship shouldn&apos;t feel like work. Fennec removes the pressure, awkwardness, and randomness from meeting new people — and instead make it a natural extension of your everyday social life.</span>
-                            <span className="hidden mobile:block mobile:text-[1.11vw] mobile:leading-[120%] mobile:tracking-[-0.04em]">We believe friendship shouldn&apos;t feel like work. Fennec removes the pressure, awkwardness, and randomness from meeting new people — and instead make it a natural extension of your everyday social life.</span>
+                            <span className="hidden mobile:block mobile:text-[1.11vw] mobile:leading-[120%] mobile:tracking-[-0.01em]">We believe friendship shouldn&apos;t feel like work. Fennec removes the pressure, awkwardness, and randomness from meeting new people — and instead make it a natural extension of your everyday social life.</span>
                         </p>
                         <p
-                            className="w-full text-[#CCCCCC] text-[4.09vw] lg:text-[1.25vw] font-normal flex items-center tracking-[-0.04em] mobile:leading-[177%] lg:leading-[120%]"
+                            className="w-full text-[#CCCCCC] text-[4.09vw] lg:text-[1.25vw] font-normal flex items-center tracking-[-0.01em] mobile:leading-[177%] lg:leading-[120%]"
                             style={{
                                 fontFamily: "'SF Pro Text', sans-serif",
                             }}
                         >
                             <span className="block mobile:hidden">We&apos;re here to build a space where groups discover groups, where vibes match effortlessly, and where connections evolve into real-life stories.</span>
-                            <span className="hidden mobile:block mobile:text-[1.11vw] mobile:leading-[120%] mobile:tracking-[-0.04em]">We&apos;re here to build a space where groups discover groups, where vibes match effortlessly, and where connections evolve into real-life stories.</span>
+                            <span className="hidden mobile:block mobile:text-[1.11vw] mobile:leading-[120%] mobile:tracking-[-0.01em]">We&apos;re here to build a space where groups discover groups, where vibes match effortlessly, and where connections evolve into real-life stories.</span>
                         </p>
                     </div>
                 </div>
@@ -145,7 +145,7 @@ export default function About() {
                 {/* Content Box */}
                 <div className="flex flex-col items-start p-[5.45vw] mobile:p-[1.87vw] lg:p-[2.08vw] gap-[5.45vw] mobile:gap-[1.87vw] lg:gap-[2.08vw] w-full mobile:w-[35.7vw] lg:w-[40vw] mobile:h-auto lg:h-auto bg-[#16003F] rounded-[3.63vw] mobile:rounded-[1.87vw] lg:rounded-[2.08vw] flex-none order-1">
                     <h2
-                        className="w-full text-white text-[4.54vw] lg:text-[1.67vw] font-bold flex items-center tracking-[-0.04em] leading-[120%]"
+                        className="w-full text-white text-[4.54vw] lg:text-[1.67vw] font-bold flex items-center tracking-[-0.01em] leading-[120%]"
                         style={{
                             fontFamily: "'SF Pro Text', sans-serif",
                         }}
@@ -154,7 +154,7 @@ export default function About() {
                         <span className="hidden mobile:block mobile:text-[1.45vw]">Our Vision</span>
                     </h2>
                     <h3
-                        className="w-full text-white text-[6.36vw] lg:text-[2.5vw] font-bold flex items-center tracking-[-0.04em] leading-[110%]"
+                        className="w-full text-white text-[6.36vw] lg:text-[2.5vw] font-bold flex items-center tracking-[-0.01em] leading-[110%]"
                         style={{
                             fontFamily: "'SF Pro Text', sans-serif",
                         }}
@@ -164,22 +164,22 @@ export default function About() {
                     </h3>
                     <div className="flex flex-col gap-[5.45vw] mobile:gap-[0.9vw] lg:gap-[2.08vw]">
                         <p
-                            className="w-full text-[#CCCCCC] text-[4.09vw] lg:text-[1.25vw] font-normal flex items-center tracking-[-0.04em] mobile:leading-[177%] lg:leading-[120%]"
+                            className="w-full text-[#CCCCCC] text-[4.09vw] lg:text-[1.25vw] font-normal flex items-center tracking-[-0.01em] mobile:leading-[177%] lg:leading-[120%]"
                             style={{
                                 fontFamily: "'SF Pro Text', sans-serif",
                             }}
                         >
                             <span className="block mobile:hidden">We envision a future where nobody feels isolated in a new city, where social circles expand seamlessly, and where meeting new people happens with confidence, trust, and genuine compatibility.</span>
-                            <span className="hidden mobile:block mobile:text-[1.11vw] mobile:leading-[120%] mobile:tracking-[-0.04em]">We envision a future where nobody feels isolated in a new city, where social circles expand seamlessly, and where meeting new people happens with confidence, trust, and genuine compatibility.</span>
+                            <span className="hidden mobile:block mobile:text-[1.11vw] mobile:leading-[120%] mobile:tracking-[-0.01em]">We envision a future where nobody feels isolated in a new city, where social circles expand seamlessly, and where meeting new people happens with confidence, trust, and genuine compatibility.</span>
                         </p>
                         <p
-                            className="w-full text-[#CCCCCC] text-[4.09vw] lg:text-[1.25vw] font-normal flex items-center tracking-[-0.04em] mobile:leading-[177%] lg:leading-[120%]"
+                            className="w-full text-[#CCCCCC] text-[4.09vw] lg:text-[1.25vw] font-normal flex items-center tracking-[-0.01em] mobile:leading-[177%] lg:leading-[120%]"
                             style={{
                                 fontFamily: "'SF Pro Text', sans-serif",
                             }}
                         >
                             <span className="block mobile:hidden">Our vision is to become the global platform that powers real-world group connections — for friendships, events, adventures, creativity, and everything in between.</span>
-                            <span className="hidden mobile:block mobile:text-[1.11vw] mobile:leading-[120%] mobile:tracking-[-0.04em]">Our vision is to become the global platform that powers real-world group connections — for friendships, events, adventures, creativity, and everything in between.</span>
+                            <span className="hidden mobile:block mobile:text-[1.11vw] mobile:leading-[120%] mobile:tracking-[-0.01em]">Our vision is to become the global platform that powers real-world group connections — for friendships, events, adventures, creativity, and everything in between.</span>
                         </p>
                     </div>
                 </div>

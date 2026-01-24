@@ -214,7 +214,7 @@ export default function Features() {
                                     "w-full text-left transition-all duration-500 rounded-[3.63vw] p-[3.63vw] flex flex-col gap-[3.63vw]",
                                     isActive
                                         ? "bg-[#5F00DB]"
-                                        : "bg-[#16003F] h-[12.72vw] overflow-hidden justify-center"
+                                        : "bg-[#16003F] min-h-[12.72vw] overflow-hidden justify-center"
                                 )}
                             >
                                 <h3 className="text-[4.54vw] font-bold leading-[120%] text-white tracking-[-0.04em]">

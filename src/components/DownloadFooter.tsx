@@ -68,8 +68,8 @@ export function Download() {
                         </p>
 
                         <div className="flex flex-row justify-center items-start gap-[16px] mobile:gap-[1.1vw] lg:gap-[1.25vw] w-full mobile:w-auto">
-                            <AppStoreButton className="lg:w-[9.38vw] lg:h-[3.13vw] lg:rounded-[0.47vw] lg:border-[0.08vw] lg:px-[0.63vw] lg:gap-[0.63vw]" />
-                            <GooglePlayButton className="lg:w-[9.38vw] lg:h-[3.13vw] lg:rounded-[0.47vw] lg:border-[0.08vw] lg:px-[0.63vw] lg:gap-[0.63vw]" />
+                            <AppStoreButton className="lg:w-[9.38vw] lg:h-[3.13vw] lg:rounded-[0.47vw] lg:px-[0.63vw] lg:gap-[0.63vw]" />
+                            <GooglePlayButton className="lg:w-[9.38vw] lg:h-[3.13vw] lg:rounded-[0.47vw] lg:px-[0.63vw] lg:gap-[0.63vw]" />
                         </div>
 
                         <p

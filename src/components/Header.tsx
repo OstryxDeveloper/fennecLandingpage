@@ -205,7 +205,7 @@ export default function Header() {
                                     <span className="font-['SF_Pro_Text',sans-serif] font-normal text-[6.4vw] leading-[7.5vw] whitespace-nowrap">
                                         Download App
                                     </span>
-                                    <Download className="w-[6.4vw] h-[6.4vw]" />
+                                    <Download style={{ width: '7vw', height: '6.5vw' }} />
                                 </Button>
                             </motion.div>
                         </div>

@@ -116,7 +116,7 @@ export default function Hero() {
             <div
                 className="absolute inset-x-[-2.08%] inset-y-[-3.7%] z-0"
                 style={{
-                    background: `linear-gradient(180deg, rgba(17, 17, 17, 0.5) 0%, #111111 70%), url('/assets/Feature Subsection-1/Card BG.webp')`,
+                    background: `linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, #111111 100%), url('/assets/hero/BG.webp')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center'
                 }}
@@ -203,7 +203,7 @@ export default function Hero() {
                 {/* Heading */}
                 <div className="flex flex-col items-center gap-[2.72vw] mobile:gap-[1.25vw] w-full text-center max-w-[81.82vw] mobile:max-w-none">
                     <h1
-                        className="text-white font-bold text-[13.63vw] mobile:text-[5.21vw] leading-[110%] tracking-[-0.04em]"
+                        className="text-white font-bold text-[13.63vw] mobile:text-[5.21vw] leading-[110%] tracking-[-0.01em]"
                         style={{ fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" }}
                     >
                         Meet New People,<br />
