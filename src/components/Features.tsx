@@ -57,7 +57,7 @@ export default function Features() {
     const activeFeature = FEATURES.find(f => f.id === activeId) || FEATURES[0];
 
     return (
-        <section id="features" className="w-full bg-[#111111] py-[40px] mobile:py-[5.5vw] flex flex-col items-center lg:py-[6.25vw] lg:px-[7.91vw]">
+        <section id="features" className="w-full bg-[#111111] pb-[40px] mobile:py-[5.5vw] flex flex-col items-center lg:py-[6.25vw] lg:px-[7.91vw] mt-[-140px] lg:mt-0">
             {/* Desktop Features Container - 1616px wide / 1920px (Hidden on Mobile) */}
             <div className="hidden lg:flex w-full max-w-[84.16vw] h-[41.66vw] relative rounded-[2.08vw] overflow-hidden">
                 {/* Background Gradient & Pattern */}

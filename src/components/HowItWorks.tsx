@@ -122,7 +122,7 @@ export default function HowItWorks() {
         offset: ["start start", "end end"],
     });
 
-    const finalStackLift = useTransform(scrollYProgress, [0.85, 1], ["0%", isMobile ? "-35%" : "-15%"]);
+    const finalStackLift = useTransform(scrollYProgress, [0.85, 1], ["0%", isMobile ? "-85%" : "-25%"]);
 
     const cards = isMobile ? CARDS_MOBILE : CARDS_DESKTOP;
 
@@ -130,17 +130,17 @@ export default function HowItWorks() {
         <section
             id="how-it-works"
             ref={sectionRef}
-            // Height adjusted to 200vh on mobile as requested
-            className={`relative w-full bg-[#111111] ${isMobile ? 'h-[200vh]' : 'h-[500vh]'}`}
+            // Height adjusted to slow down scroll speed
+            className={`relative w-full bg-[#111111] ${isMobile ? 'h-[300vh]' : 'h-[700vh]'}`}
         >
-            <div className="sticky top-0 h-screen w-full flex flex-col items-center overflow-hidden px-[3.63vw] lg:px-[7.91vw]">
+            <div className="sticky top-0 h-screen w-full flex flex-col items-center overflow-hidden px-[3.63vw] lg:px-[7.91vw] pt-8">
 
                 <div className={`relative w-full h-full flex ${isMobile ? 'flex-col justify-start pt-[15vw] gap-[4vw]' : 'items-center justify-center'}`}>
 
                     <motion.div
                         className={`${isMobile ? 'relative w-full text-center z-0' : 'absolute w-full text-center z-0 top-[7.81vw]'}`}
                     >
-                        <h2 className={`${isMobile ? 'text-[9vw]' : 'text-[7.29vw]'} font-bold leading-[110%] text-white opacity-10 tracking-[-0.04em] select-none whitespace-nowrap`}>
+                        <h2 className={`${isMobile ? 'text-[14vw]' : 'text-[7.29vw]'} font-bold leading-[110%] text-white opacity-10 tracking-[-0.04em] select-none whitespace-nowrap`}>
                             {isMobile ? (
                                 <>Effortless <br />Group <br /> Matching <br /> Starts Here</>
                             ) : (
@@ -205,7 +205,7 @@ function StickyCard({ card, index, scrollYProgress, isMobile }: { card: any; ind
         >
             <motion.div
                 className={`relative bg-[#5F00DB] border-[#111111] overflow-hidden group shadow-2xl ${isMobile
-                    ? 'w-[75vw] h-[75vw] border-[1.13vw]'
+                    ? 'w-[85vw] h-[85vw] border-[1.13vw]'
                     : 'w-[20.83vw] h-[20.83vw] border-[0.26vw]'
                     }`}
                 style={{
@@ -253,7 +253,7 @@ function StickyCard({ card, index, scrollYProgress, isMobile }: { card: any; ind
                 <div
                     className={`absolute bottom-0 left-0 right-0 flex flex-col justify-end ${isMobile ? 'p-[3.63vw] pb-[5.45vw]' : 'p-[1.25vw] pb-[1.25vw] pt-[3.33vw]'}`}
                     style={{
-                        height: isMobile ? `calc(${card.textHeight} / 2)` : `calc(${card.textHeight} / 2)`,
+                        height: isMobile ? `calc(${card.textHeight} / 1.5)` : `calc(${card.textHeight} / 2)`,
                         background: "linear-gradient(180deg, rgba(22, 0, 63, 0) 0%, rgba(22, 0, 61, 0.75) 90%)",
                         backdropFilter: isMobile ? "blur(2px)" : "blur(0.1625vw)",
                         WebkitBackdropFilter: isMobile ? "blur(2px)" : "blur(0.1625vw)"
@@ -268,7 +268,7 @@ function StickyCard({ card, index, scrollYProgress, isMobile }: { card: any; ind
                         <h3 className={`${isMobile ? 'text-[5.45vw]' : 'text-[1.66vw]'} font-bold leading-[120%] tracking-[-0.04em] text-white`}>
                             {card.title}
                         </h3>
-                        <p className={`${isMobile ? 'text-[3.63vw]' : 'text-[0.93vw]'} font-normal leading-relaxed text-white/95`}>
+                        <p className={`${isMobile ? 'text-[3.63vw]' : 'text-[0.93vw]'} font-normal leading-relaxed text-[#ffffff]`}>
                             {card.description}
                         </p>
                     </div>
